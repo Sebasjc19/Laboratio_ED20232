@@ -4,11 +4,6 @@ public class Prisionero {
     private String nombre;
     private String numeroIdentificacion;
 
-    public Prisionero(String nombre, String numeroIdentificacion) {
-        this.nombre = nombre;
-        this.numeroIdentificacion = numeroIdentificacion;
-    }
-
     public String getNombre() {
         return nombre;
     }
@@ -21,7 +16,7 @@ public class Prisionero {
         return numeroIdentificacion;
     }
 
-    public void setNumeroIdentificacion(String numeroIdentificacion) {
+    public void setIdentificacion(String numeroIdentificacion) {
         this.numeroIdentificacion = numeroIdentificacion;
     }
 }

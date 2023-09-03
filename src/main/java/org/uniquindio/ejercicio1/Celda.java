@@ -3,11 +3,10 @@ package org.uniquindio.ejercicio1;
 public class Celda extends Espacio{
     private String codigo;
     private Prisionero prisionero;
-    private boolean verificado;
+    private ESTADO estado;
+    private ESTA_PRISIONERO estaPrisionero;
 
-    public Celda(String codigo, Prisionero prisionero) {
-        this.codigo = codigo;
-        this.prisionero = prisionero;
+    public Celda() {
     }
 
     public String getCodigo() {
@@ -26,13 +25,19 @@ public class Celda extends Espacio{
         this.prisionero = prisionero;
     }
 
-    public boolean isVerificado() {
-        return verificado;
+    public ESTADO getEstado() {
+        return estado;
     }
 
-    public void setVerificado(boolean verificado) {
-        this.verificado = verificado;
+    public void setEstado(ESTADO estado) {
+        this.estado = estado;
     }
 
+    public ESTA_PRISIONERO getEstaPrisionero() {
+        return estaPrisionero;
+    }
 
+    public void setEstaPrisionero(ESTA_PRISIONERO estaPrisionero) {
+        this.estaPrisionero = estaPrisionero;
+    }
 }

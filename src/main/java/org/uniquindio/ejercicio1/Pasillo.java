@@ -1,9 +1,16 @@
 package org.uniquindio.ejercicio1;
 
 public class Pasillo extends Espacio{
-    private final TIPOPASILLO tipopasillo;
+    private TIPO tipopasillo;
 
-    public Pasillo(TIPOPASILLO tipopasillo) {
+    public Pasillo(TIPO tipopasillo) {
+        this.tipopasillo = tipopasillo;
+    }
+
+    public TIPO getTipopasillo() {
+        return tipopasillo;
+    }
+    public void setTipopasillo(TIPO tipopasillo) {
         this.tipopasillo = tipopasillo;
     }
 }
